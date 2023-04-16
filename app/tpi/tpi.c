@@ -429,7 +429,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        getIpByIface("eth0",host,sizeof(host));
+        getIpByIface("lo",host,sizeof(host));
         if(checkIpAddress(host))
         {
             usage();
